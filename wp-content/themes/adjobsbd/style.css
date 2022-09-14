@@ -6,3 +6,9 @@ Author URI: htts://rusulazom.xyz
 Description: description goin here. 
 Text Domain: adjobsbd
 */
+
+.bg-img-header {
+    color: #fff;
+    background-color: #0D3880;
+    background-repeat: cover;
+}
