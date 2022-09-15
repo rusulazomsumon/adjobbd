@@ -10,8 +10,9 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap Font Icon CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <title>Exclusive job portal for the person with disabilits.
     </title>
 </head>
@@ -46,7 +47,23 @@
                     <div class="col-2"></div>
                 </div>
                 <!-- 3rd Row Icons -->
-                
+                <div class="row">
+                    <div class="col-4 card">
+                        <i class="bi-alarm bs-icons"></i>
+                        <h3>Total Job</h3>
+                        <h2>999</h2>
+                    </div>
+                    <div class="col-4 card">
+                        <i class="bi-alarm bs-icons"></i>
+                        <h3>Category</h3>
+                        <h2>999</h2>
+                    </div>
+                    <div class="col-4 card">
+                        <i class="bi-alarm bs-icons"></i>
+                        <h3>City</h3>
+                        <h2>999</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
