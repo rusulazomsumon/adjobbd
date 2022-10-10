@@ -5,7 +5,7 @@
     // dynamic site/page title
     function adjobsbd_setup(){
         add_theme_support('title-tag');
-        add_theme_support('post-thumbnails',array('post'));
+        add_theme_support('post-thumbnails',array('post','job'));
 
     }
     // hocks for title and others
@@ -46,5 +46,49 @@
         wp_enqueue_script( 'mainJs', get_template_directory_uri().'/assets/js/main.js', array('jquery'), '1.0.0', true);
     }
     add_action( 'wp_enqueue_scripts', 'adjobsbd_assets' );
+
+    // *********************************************************************************************************
+    // dynamic Post using ACF custom post 
+    function adjobsbd_jobs(){
+        $labels = array(
+            'name'                  => _x( 'Jobs', 'Post type general name', 'adjobsbd' ),
+            'adjobsbd'              => _x( 'Jobs', 'Post type singular name', 'adjobsbd' ),
+            'menu_name'             => _x( 'Jobs', 'Admin Menu text', 'adjobsbd' ),
+            'name_admin_bar'        => _x( 'Job', 'Add New on Toolbar', 'adjobsbd' ),
+            'add_new'               => __( 'Add Job', 'adjobsbd' ),
+            'add_new_item'          => __( 'Add New Job', 'adjobsbd' ),
+            'new_item'              => __( 'New Job', 'adjobsbd' ),
+            'edit_item'             => __( 'Edit Job', 'adjobsbd' ),
+            'view_item'             => __( 'View Job', 'adjobsbd' ),
+            'all_items'             => __( 'All Jobs', 'adjobsbd' ),
+            'search_items'          => __( 'Search Job', 'adjobsbd' ),
+            'parent_item_colon'     => __( 'Parent Job:', 'adjobsbd' ),
+            'not_found'             => __( 'No Jobs found.', 'adjobsbd' ),
+            'not_found_in_trash'    => __( 'No Jobs found in Trash.', 'adjobsbd' ),
+            'featured_image'        => _x( 'Jobs Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'textdomain' ),
+            );
+
+            $args = array(
+                'labels'             => $labels,
+                'public'             => true,
+                'publicly_queryable' => true,
+                'show_ui'            => true,
+                'show_in_menu'       => true,
+                'query_var'          => true,
+                'rewrite'            => array( 'slug' => 'job' ),
+                'capability_type'    => 'post',
+                'menu_position'       => 2,
+                'menu_icon'           => 'dashicons-list-view',
+                'has_archive'        => true,
+                'hierarchical'       => false,
+                'menu_position'      => null,
+                'supports'           => array( 'title', 'editor', 'thumbnail', ),
+                'show_in_rest'       => true
+                
+            );
+        
+            register_post_type( 'job', $args );
+    }
+    add_action('init','adjobsbd_jobs');
 
 
