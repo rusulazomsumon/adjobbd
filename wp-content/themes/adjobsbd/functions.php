@@ -83,7 +83,7 @@
                 'hierarchical'       => false,
                 'menu_position'      => null,
                 'supports'           => array( 'title', 'editor', 'thumbnail', ),
-                'show_in_rest'       => true
+                // 'show_in_rest'       => true
                 
             );
         
