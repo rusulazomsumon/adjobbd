@@ -48,7 +48,7 @@
                                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img class="flex-shrink-0 img-fluid border rounded" src="<?php echo $company_logo['url']; ?>" alt="" style="width: 80px; height: 80px;">
                                         <div class="text-start ps-4">
-                                            <h5 class="mb-3"><?php the_title(); ?></h5>
+                                            <h5 class="mb-3"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
                                             <span class="text-truncate me-3"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/geo-alt-fill.svg"alt="file post"></i><?php echo $location; ?></span>
                                             <span class="text-truncate me-3"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/stopwatch.svg"alt="file post"></i><?php echo $job_type; ?></span>
                                             <span class="text-truncate me-0"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cash.svg"alt="file post"></i><?php echo $sallery; ?></span>

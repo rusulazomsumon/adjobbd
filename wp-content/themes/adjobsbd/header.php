@@ -40,6 +40,13 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
+                <nav>
+                    <?php 
+                        wp_nav_menu(array(
+                            'theme_location' => 'primary-menu'
+                        ));
+                    ?>
+                </nav>
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
@@ -60,7 +67,10 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block"><i><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/file-post.svg"alt="file post"></i> Post A Job</a>
+                <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    <i><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/file-post.svg"alt="file post">
+                    </i> Post A Job
+                </a>
             </div>
         </nav>
         <!-- Navbar End -->

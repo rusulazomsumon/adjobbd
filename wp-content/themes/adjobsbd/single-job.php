@@ -22,9 +22,18 @@
                                 $company_title = get_field('company_title', $job_id);
                                 $company_description = get_field('company_description', $job_id);
                             ?>
-                            <img class="flex-shrink-0 img-fluid border rounded" src="<?php the_post_thumbnail_url(); ?>" alt="" style="width: 80px; height: 80px;">
+                            <img class="flex-shrink-0 img-fluid border rounded" src="<?php the_post_thumbnail_url(); ?>" alt="" style="width: 90px; height: 90px;">
                             <div class="text-start ps-4">
-                                <h3 class="mb-3"><?php the_title(); ?></h3>
+                                <!-- job category -->
+                                <h6 class=" text-primary">
+                                    <?php  
+                                        $catgs = get_the_category();
+                                        // only 1st category will show
+                                        echo $catgs[0]->slug; 
+                                    ?>
+                                    <!-- <pre><?php print_r($catgs); ?></pre>  -->
+                                </h6>
+                                <h3 class=""><?php the_title(); ?></h3>
                                 <span class="text-truncate me-3"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/geo-alt-fill.svg"alt="file post"></i><?php echo $location; ?></span>
                                 <span class="text-truncate me-3"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/stopwatch.svg"alt="file post"></i><?php echo $job_type; ?></span>
                                 <span class="text-truncate me-0"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cash.svg"alt="file post"></i><?php echo $sallery ?> tk</span>

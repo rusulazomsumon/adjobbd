@@ -8,10 +8,6 @@
         <!-- Connecting Header -->
         <?php get_header(); ?>
 
-        <!-- ###############################Page Head#################################### -->
-        <?php get_template_part('template-parts/pertials/content','pageHead'); ?>
-        <!-- Page Head End -->
-
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">

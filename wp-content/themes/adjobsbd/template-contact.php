@@ -7,9 +7,6 @@
         <!-- Connecting Header -->
         <?php get_header(); ?>
 
-        <!-- ###############################Page Head#################################### -->
-        <?php get_template_part('template-parts/pertials/content','pageHead'); ?>
-        <!-- Breaking News End -->
 
 
         <!-- Contact Start -->

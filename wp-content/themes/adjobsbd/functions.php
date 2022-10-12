@@ -7,6 +7,14 @@
         add_theme_support('title-tag');
         add_theme_support('post-thumbnails',array('post','job'));
 
+         // registering manu
+         register_nav_menus(array(
+            'primary-menu' => __('Primary Menu', 'adjobsbd'),
+            'footer-menu' => __('Footer Menu', 'adjobsbd'),
+            'top-menu' => __('Topber Menu', 'adjobsbd')
+
+        ));
+
     }
     // hocks for title and others
     add_action('after_setup_theme','adjobsbd_setup');
@@ -82,6 +90,7 @@
                 'has_archive'        => true,
                 'hierarchical'       => false,
                 'menu_position'      => null,
+                'taxonomies'          => array('jobCat', 'category' ),
                 'supports'           => array( 'title', 'editor', 'thumbnail', ),
                 // 'show_in_rest'       => true
                 
