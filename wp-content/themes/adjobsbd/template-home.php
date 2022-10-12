@@ -149,8 +149,16 @@
         <!-- Category End -->
 
 
-        <!-- About Start -->
-        <div class="container-xxl py-5">
+       
+
+        <!-- Jobs List Start -->
+         <!-- ###############################Job List#################################### -->
+         <?php get_template_part('template-parts/pertials/content','jobList'); ?>
+        <!-- Joblisting End -->
+        <!-- Jobs End -->
+
+         <!-- About Start -->
+         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -181,13 +189,6 @@
             </div>
         </div>
         <!-- About End -->
-
-
-        <!-- Jobs Start -->
-         <!-- ###############################Job List#################################### -->
-         <?php get_template_part('template-parts/pertials/content','jobList'); ?>
-        <!-- Joblisting End -->
-        <!-- Jobs End -->
 
 
         <!-- Testimonial Start -->
