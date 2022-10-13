@@ -85,7 +85,7 @@
                 'query_var'          => true,
                 'rewrite'            => array( 'slug' => 'job' ),
                 'capability_type'    => 'post',
-                'menu_position'       => 2,
+                'menu_position'       => 1,
                 'menu_icon'           => 'dashicons-list-view',
                 'has_archive'        => true,
                 'hierarchical'       => false,

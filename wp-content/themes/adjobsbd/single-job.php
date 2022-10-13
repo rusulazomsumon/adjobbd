@@ -15,7 +15,6 @@
                                 $location = get_field('location', $job_id);
                                 $job_type = get_field('job_type', $job_id);
                                 $vacency = get_field('vacency', $job_id);
-                                $job_category = get_field('job_category', $job_id);
                                 $deateline = get_field('deateline', $job_id);
                                 $sallery = get_field('sallery', $job_id);
                                 $company_logo = get_field('company_logo', $job_id);
@@ -25,13 +24,12 @@
                             <img class="flex-shrink-0 img-fluid border rounded" src="<?php the_post_thumbnail_url(); ?>" alt="" style="width: 90px; height: 90px;">
                             <div class="text-start ps-4">
                                 <!-- job category -->
-                                <h6 class=" text-primary">
+                                <h6 class="text-primary text-capitalize">
                                     <?php  
                                         $catgs = get_the_category();
                                         // only 1st category will show
                                         echo $catgs[0]->slug; 
                                     ?>
-                                    <!-- <pre><?php print_r($catgs); ?></pre>  -->
                                 </h6>
                                 <h3 class=""><?php the_title(); ?></h3>
                                 <span class="text-truncate me-3"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/geo-alt-fill.svg"alt="file post"></i><?php echo $location; ?></span>
