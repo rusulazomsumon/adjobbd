@@ -1,0 +1,173 @@
+{
+    "key": "group_6344523fcb78a",
+    "title": "Job Item",
+    "fields": [
+        {
+            "key": "field_6344526c79edd",
+            "label": "Location",
+            "name": "location",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Dhaka": "Dhaka",
+                "Chittagong": "Chittagong",
+                "Shylet": "Shylet",
+                "Khulna": "Khulna",
+                "Rajshahi": "Rajshahi",
+                "Borishal": "Borishal",
+                "Ragpur": "Ragpur",
+                "Maymensing": "Maymensing",
+                "Work From Home": "Work From Home"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_634452dd79ede",
+            "label": "Job Type",
+            "name": "job_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Full Time": "Full Time",
+                "Part Time": "Part Time",
+                "Remote": "Remote",
+                "Daily": "Daily",
+                "Project": "Project",
+                "Contact": "Contact",
+                "Others": "Others"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6345e10393151",
+            "label": "Vacency",
+            "name": "vacency",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_6345e14b93152",
+            "label": "Job Category",
+            "name": "job_category",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "IT Job": "IT Job",
+                "Design": "Design",
+                "HR": "HR",
+                "Office": "Office",
+                "Industries": "Industries",
+                "Garments": "Garments"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6345e1b293153",
+            "label": "Deateline",
+            "name": "deateline",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_6345e2d39c499",
+            "label": "Sallery",
+            "name": "sallery",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "job"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1665754137
+}

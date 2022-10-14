@@ -100,4 +100,23 @@
     }
     add_action('init','adjobsbd_jobs');
 
-
+    
+    // *********************************************************************************************************
+    // theme option with ACF 
+    if( function_exists('acf_add_options_page') ) {
+        
+        acf_add_options_page(array(
+            'page_title' 	=> __('Theme General Settings','adjobsbd'),
+            'menu_title'	=> __('Theme Settings','adjobsbd'),
+            'menu_slug' 	=> 'theme-general-settings',
+            'capability'	=> 'edit_posts',
+            'redirect'		=> false
+        ));
+        // for  Home  page 
+        acf_add_options_sub_page(array(
+            'page_title' 	=> __('Theme Home Areas Settings','adjobsbd'),
+            'menu_title'	=> __('Home Areas','adjobsbd'),
+            'parent_slug'	=> 'theme-general-settings',
+        ));
+        
+    }

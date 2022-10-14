@@ -82,42 +82,9 @@
         <!-- Search End -->
 
 
-        <!-- Category Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
-                <div class="row g-4">
-                <?php  
-                                        $catgs = get_the_category();
-                                    ?>
-                                    <pre><?php print_r($catgs); ?></pre> 
-                <?php 
-                    $args = array(
-                        'post_type' =>  'category',
-                        'order' =>  'DSC',
-                        'posts_per_page' => 8
-                    );
-                    $query = new WP_Query($args);
-                    while($query -> have_posts()){
-                        $query -> the_post();
-                        
-                    ?>
-                    
-                    <div class="col-lg-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item rounded p-4" href="">
-                            <i class=" text-primary mb-4"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/patch-question.svg"alt="patch question"></i>
-                            <h6 class="mb-3">Marketing</h6>
-                            <p class="mb-0">123 Vacancy</p>
-                        </a>
-                    </div>
-                    <!-- end of loop -->
-                    <?php 
-                        }
-                        wp_reset_postdata();
-                    ?>
-                </div>
-            </div>
-        </div>
+        <!-- Job Category feture Start -->
+        <!-- ###############################Job Feture Category for acf#################################### -->
+        <?php get_template_part('template-parts/pertials/content','fCat'); ?>
         <!-- Category End -->
 
 
