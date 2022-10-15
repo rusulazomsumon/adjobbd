@@ -10,7 +10,7 @@
                     ?>
                     <!-- testimonail markup  -->
                     <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <i class="fa fa-2x text-primary mb-3"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/quote.svg" alt="" width="48px" height="48px"></i>
                         <p><?php echo $testimonial['testimonial_text']; ?></p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded" src="<?php echo $testimonial['clints_pictute']; ?>" style="width: 50px; height: 50px;">
