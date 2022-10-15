@@ -118,5 +118,11 @@
             'menu_title'	=> __('Home Areas','adjobsbd'),
             'parent_slug'	=> 'theme-general-settings',
         ));
+        // for  Testimonial  page 
+        acf_add_options_sub_page(array(
+            'page_title' 	=> __('Theme Testimonials','adjobsbd'),
+            'menu_title'	=> __('Testimonials ','adjobsbd'),
+            'parent_slug'	=> 'theme-general-settings',
+        ));
         
     }
