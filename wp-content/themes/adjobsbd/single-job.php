@@ -24,13 +24,15 @@
                             <img class="flex-shrink-0 img-fluid border rounded" src="<?php the_post_thumbnail_url(); ?>" alt="" style="width: 90px; height: 90px;">
                             <div class="text-start ps-4">
                                 <!-- job category -->
-                                <h6 class="text-primary text-capitalize">
                                     <?php  
                                         $catgs = get_the_category();
-                                        // only 1st category will show
-                                        echo $catgs[0]->slug; 
                                     ?>
-                                </h6>
+                                <a href="<?php echo get_category_link($catgs); ?>">
+                                    <h6 class="text-primary text-capitalize">
+                                        <!-- only 1st category will show -->
+                                        <?php echo $catgs[0]->slug; ?>
+                                    </h6>
+                                </a>
                                 <h3 class=""><?php the_title(); ?></h3>
                                 <span class="text-truncate me-3"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/geo-alt-fill.svg"alt="file post"></i><?php echo $location; ?></span>
                                 <span class="text-truncate me-3"><i class="text-primary me-2"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/stopwatch.svg"alt="file post"></i><?php echo $job_type; ?></span>

@@ -6,31 +6,9 @@
         <?php get_header(); ?>
 
 
-        <!-- Category Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
-                <div class="row g-4">
-                    <!-- showing all categor -->
-                    <!-- header socila linkin area, activate form ACM  -->
-                    <?php 
-                        
-                        $job_cat = get_field('job_categorics', $catid);
-                        
-                    
-                    ?>
-                    <!-- category content start --> 
-                    <div class="col-lg-12 col-sm-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item rounded p-4" href="<?php echo $job_cat['category_link']; ?>">
-                            <i class="text-primary mb-4 p-5 "><img class="border border-primary rounded-circle shadow-sm" src="<?php echo $job_cat['category_icon']; ?>"alt="patch question" height="70px" width="70px"></i>
-                            <h6 class="mb-3"><?php echo $job_cat['category_title']; ?></h6>
-                            <p class="mb-0"><?php echo $job_cat['category_description']; ?></p>
-                        </a>
-                    </div>
-                    <!-- category content end -->
-                </div>
-            </div>
-        </div>
+         <!-- Job Category feture Start -->
+        <!-- ###############################Job Feture Category for acf#################################### -->
+        <?php get_template_part('template-parts/pertials/content','fCat'); ?>
         <!-- Category End -->
 
         <!-- Jobs Start -->

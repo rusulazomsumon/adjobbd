@@ -12,7 +12,8 @@
                     <!-- category content start -->
                     <div class="col-lg-3 col-sm-6 text-center wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item rounded p-4" href="<?php echo $job_cat['category_link']; ?>">
-                            <i class="text-primary mb-4 p-5 "><img class="border border-primary rounded-circle shadow-sm" src="<?php echo $job_cat['category_icon']; ?>"alt="patch question" height="70px" width="70px"></i>
+                            <i class="text-primary mb-4 p-5 "><img class="border border-primary rounded-circle shadow-sm" 
+                                src="<?php echo $job_cat['category_icon']; ?>"alt="patch question" height="70px" width="70px"></i>
                             <h6 class="mb-3"><?php echo $job_cat['category_title']; ?></h6>
                             <p class="mb-0"><?php echo $job_cat['category_description']; ?></p>
                         </a>

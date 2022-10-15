@@ -14,6 +14,16 @@
     z-index: 99;
 }
 
+/* ##########Temporary code for menu############ */
+nav ul#menu-main-menu{
+    display: flex;
+    list-style: none;
+}
+nav ul#menu-main-menu li{
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+
 
 /*** Spinner ***/
 #spinner {
